@@ -15,6 +15,8 @@
 		E2254AF4277B201500157E5F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2254AF3277B201500157E5F /* Model.swift */; };
 		E2254AF7277B212B00157E5F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2254AF6277B212B00157E5F /* DataManager.swift */; };
 		E2254AF9277B276000157E5F /* PersonsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2254AF8277B276000157E5F /* PersonsListTableViewController.swift */; };
+		E2254AFD277B5FC100157E5F /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2254AFC277B5FC100157E5F /* PersonViewController.swift */; };
+		E2254AFF277B6D0B00157E5F /* DetailsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2254AFE277B6D0B00157E5F /* DetailsListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		E2254AF3277B201500157E5F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		E2254AF6277B212B00157E5F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		E2254AF8277B276000157E5F /* PersonsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListTableViewController.swift; sourceTree = "<group>"; };
+		E2254AFC277B5FC100157E5F /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		E2254AFE277B6D0B00157E5F /* DetailsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				E2254AF8277B276000157E5F /* PersonsListTableViewController.swift */,
+				E2254AFC277B5FC100157E5F /* PersonViewController.swift */,
+				E2254AFE277B6D0B00157E5F /* DetailsListTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -193,6 +199,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2254AF7277B212B00157E5F /* DataManager.swift in Sources */,
+				E2254AFF277B6D0B00157E5F /* DetailsListTableViewController.swift in Sources */,
+				E2254AFD277B5FC100157E5F /* PersonViewController.swift in Sources */,
 				E2254ADB277B1F1900157E5F /* AppDelegate.swift in Sources */,
 				E2254ADD277B1F1900157E5F /* SceneDelegate.swift in Sources */,
 				E2254AF9277B276000157E5F /* PersonsListTableViewController.swift in Sources */,
