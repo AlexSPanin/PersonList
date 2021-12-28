@@ -7,15 +7,15 @@
 
 import Foundation
 
-class DataMansger {
+class DataManager {
     
-    static let shared = DataMansger()
+    static let shared = DataManager()
     
     let names = [
-    "John", "Aaaron", "Tim",
-    "Ted", "Steven", "Ivan",
-    "Alex", "Nicola", "Maria",
-    "Anna"
+        "John", "Aaaron", "Tim",
+        "Ted", "Steven", "Ivan",
+        "Alex", "Nicola", "Maria",
+        "Anna"
     ]
     
     let surnames = [
@@ -26,17 +26,17 @@ class DataMansger {
     ]
     
     let emails = [
-    "aaa@ya.ru", "bbb@ya.ru", "ccc@ya.ru",
-    "ddd@ya.ru", "eee@ya.ru", "fff@ya.ru",
-    "ttt@ya.ru", "sss@ya.ru", "rrr@ya.ru",
-    "uuu@ya.ru"
+        "aaa@ya.ru", "bbb@ya.ru", "ccc@ya.ru",
+        "ddd@ya.ru", "eee@ya.ru", "fff@ya.ru",
+        "ttt@ya.ru", "sss@ya.ru", "rrr@ya.ru",
+        "uuu@ya.ru"
     ]
     
     let phones = [
-    "134579874", "245893146", "321856841",
-    "421387690", "532097789", "612309877",
-    "744526531", "863521709", "912346237",
-    "037321881"
+        "134579874", "245893146", "321856841",
+        "421387690", "532097789", "612309877",
+        "744526531", "863521709", "912346237",
+        "037321881"
     ]
     
     private init() {}
