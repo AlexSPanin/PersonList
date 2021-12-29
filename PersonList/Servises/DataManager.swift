@@ -11,11 +11,13 @@ class DataManager {
     
     static let shared = DataManager()
     
+    // MARK - внес для проверки дублирующие элементы и не равное кол-во уникальных
+    
     let names = [
         "John", "Aaaron", "Tim",
         "Ted", "Steven", "Ivan",
         "Alex", "Nicola", "Maria",
-        "Anna"
+        "Anna", "Alex", "Aleksey"
     ]
     
     let surnames = [

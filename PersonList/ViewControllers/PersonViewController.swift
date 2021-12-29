@@ -12,13 +12,12 @@ class PersonViewController: UIViewController {
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
     
-    var person: PersonsList!
+    var person: Persons!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.title = person.title
-        
         emailLabel.text = "E-mail: \(person.email)"
         phoneLabel.text = "Phone: \(person.phone)"
     }

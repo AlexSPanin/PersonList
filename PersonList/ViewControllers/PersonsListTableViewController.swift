@@ -9,18 +9,9 @@ import UIKit
 
 class PersonsListTableViewController: UITableViewController {
     
-    private let personsList = PersonsList.getPersonsList()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        tabBarController?.tabBar.isHidden = false
-    }
-    
-    // MARK: - Table view data source
+    private let personsList = Persons.getPersonsList()
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         personsList.count
     }
     
@@ -36,11 +27,10 @@ class PersonsListTableViewController: UITableViewController {
         return cell
     }
     
-    // MARK: - Navigation
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let personVC = segue.destination as? PersonViewController else { return }
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        
         let person = personsList[indexPath.row]
         personVC.person = person
     }

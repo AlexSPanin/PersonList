@@ -8,26 +8,22 @@
 import UIKit
 
 class DetailsListTableViewController: UITableViewController {
-
-    private let personsList = PersonsList.getPersonsList()
     
-    // MARK: - Table view data source
-
+    private let personsList = Persons.getPersonsList()
+ 
     override func numberOfSections(in tableView: UITableView) -> Int {
         personsList.count
     }
-
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         personsList[section].title
     }
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         2
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "personDetails", for: indexPath)
-
+        
         let person = personsList[indexPath.section]
         var content = cell.defaultContentConfiguration()
         
@@ -38,7 +34,7 @@ class DetailsListTableViewController: UITableViewController {
         default:
             content.text = person.email
             content.image = UIImage(systemName: "tray")
-            }
+        }
         
         cell.contentConfiguration = content
         return cell
